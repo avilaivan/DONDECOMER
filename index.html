@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - DONDECOMER 2025</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(to right, #fde6dd, #fffaf8 50%, #fde6dd);
+    }
+
+    .wrapper {
+      width: 900px;
+      max-width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+      mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+    }
+
+    /* Bordes decorativos laterales */
+    .borde-izq,
+    .borde-der {
+      position: fixed;
+      top: 0;
+      width: 80px;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.5;
+      background: linear-gradient(to bottom, #fde4da, #fffaf8, #fde4da);
+    }
+
+    .borde-izq {
+      left: 0;
+    }
+
+    .borde-der {
+      right: 0;
+    }
+
+    /* Ocultar en pantallas pequeñas */
+    @media (max-width: 768px) {
+      .borde-izq,
+      .borde-der {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenido principal -->
+  <div class="wrapper">
+    <img src="portafolio-dondecomer-2025.png" alt="Portafolio 2025" />
+  </div>
+</body>
+</html>
+
